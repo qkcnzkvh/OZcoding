@@ -12,7 +12,7 @@ git에 접속 : git init
 깃허브 업로드 위해 주소 등록 : git remote add 별명 (깃허브)주소
 깃허브에 메인 업로드 하기 : git push 별명 main
 깃허브에 커밋을 가져와 로컬 메인까지 변경하기 : git pull 별명 main
-깃허브 다운 : git 주소
+깃허브 다운 : git clone 주소
 
 # github에서 업무 분담
 issue 생성 후 팀원에게 할당하기
