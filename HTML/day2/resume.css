@@ -1,0 +1,34 @@
+.title {
+    font-size: x-large; 
+    text-align: center;
+    }
+
+#github {
+    color: gray;
+    text-decoration: none;
+    }
+
+#github:hover {
+    color: brown;
+    text-decoration: underline;
+    }
+
+.info1 {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+
+.info2 #greeting {
+    text-align: center;
+    display: block;
+}
+
+.info2 {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    }
