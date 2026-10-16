@@ -1,0 +1,57 @@
+/* 전체 화면 */
+body {
+    background-color: #F3F6FA;
+    color: #333333;
+}
+
+/* 제목 */
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: #243B53;
+}
+
+/* 소제목 */
+.section-title {
+    font-weight: bold;
+    color: #243B53;
+}
+
+/* GitHub 링크 */
+.github-link {
+    text-align: center;
+}
+
+#github {
+    color: #486581;
+    text-decoration: none;
+}
+
+#github:hover {
+    color: #D97757;
+    text-decoration: underline;
+}
+
+/* 기본 정보 및 기술 소개 */
+.info1 {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-weight: 400;
+}
+
+/* 연락처 제목 */
+.info2 #greeting {
+    text-align: center;
+    font-weight: bold;
+    color: #243B53;
+}
+
+/* 연락처 영역 */
+.info2 {
+    font-family: "Google Sans", sans-serif;
+    background-color: #D9EAF7;
+    color: #243B53;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 10px
+}
