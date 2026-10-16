@@ -1,0 +1,123 @@
+:root {
+    --navy: #243B53;
+    --light-blue: #D9EAF7;
+    --text: #333333;
+    --bg: #F3F6FA;
+    --accent: #C9D9CC;
+}
+
+/* 전체 화면 */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* 제목 */
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: var(--navy);
+}
+
+/* 소제목 */
+.section-title {
+    font-weight: bold;
+    color: var(--navy);
+}
+
+/* GitHub 링크 */
+.github-link {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#github {
+    width: 100px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 20px;
+}
+
+#github i {
+    font-size: 24px;
+}
+
+/* 프로필 */
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.profile > div {
+    padding: 8px 0;
+}
+
+.profile > div:hover {
+    background-color: var(--light-blue);
+    border-radius: 10px;
+}
+
+.profile p {
+    margin: 2px 0;
+}
+
+/* 기본 정보 및 기술 소개 */
+.info1 {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-weight: 400;
+    padding: 2vh;
+}
+
+/* 왼쪽 스킬 항목 */
+.nav-pills .nav-link {
+    color: var(--navy);
+    background-color: #FFFFFF;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #E5EDE7;
+    color: #344B3D;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--accent)!important;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link:focus {
+    box-shadow: none;
+}
+
+.nav-pills .nav-link:focus-visible {
+    outline-color: var(--accent);
+}
+
+
+/* 연락처 영역 */
+.info2 {
+    font-family: "Google Sans", sans-serif;
+    background-color: var(--light-blue);
+    color: var(--navy);
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.info2 #greeting {
+    text-align: center;
+    font-weight: bold;
+    color: var(--navy);
+}

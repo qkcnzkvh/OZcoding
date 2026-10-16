@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume</title>
+
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./resume.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 제목 및 자기소개 -->
+    <div class="info1">
+        <p class="title">RESUME</p>
+        <p>저는 김새봄입니다. 지금은 HTML을 공부 중입니다.</p>
+    </div>
+
+    <!-- GitHub 링크 -->
+    <div class="github-link">
+        <a href="https://github.com/qkcnzkvh" id="github" class="btn btn-dark">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+    </div>
+
+    <!-- 기본 정보 -->
+    <div class="profile">
+        <div>
+            <p>이름</p>
+            <p>김새봄</p>
+        </div>
+
+        <div>
+            <p>나이</p>
+            <p>33살</p>
+        </div>
+
+        <div>
+            <p>성별</p>
+            <p>남자</p>
+        </div>
+
+        <div>
+            <p>거주지</p>
+            <p>서울</p>
+        </div>
+    </div>
+
+    <!-- 학습한 기술 -->
+    <div class="info1">
+        <p class="section-title">OZ 코딩에서 배운 스킬</p>
+
+        <!-- 큰 화면: 기존 탭 방식 -->
+        <div class="desktop-skills">
+            <div class="row">
+                <!-- 기존 왼쪽 스킬 목록 -->
+                <!-- 기존 오른쪽 설명 -->
+            </div>
+            <div class="row">
+                <!-- 왼쪽 항목 -->
+                <div class="col-12 col-sm-4">
+                    <div class="nav flex-column nav-pills">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#html-css" type="button">
+                            HTML & CSS
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#python" type="button">
+                            Python
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ml" type="button">
+                            머신러닝
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#dl" type="button">
+                            딥러닝
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#data-analysis" type="button">
+                            데이터 분석하기
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 설명 -->
+                <div class="col-12 col-sm-8">
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade show active" id="html-css">
+                            <h4>HTML & CSS</h4>
+                            <p>HTML 태그를 활용한 웹페이지 구조 작성과 CSS를 이용한 스타일링</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="python">
+                            <h4>Python</h4>
+                            <p>변수, 자료형, 조건문, 반복문 등 Python 기초 문법과 라이브러리 활용</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="ml">
+                            <h4>머신러닝</h4>
+                            <p>데이터를 활용한 머신러닝 모델 학습과 성능 평가</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="dl">
+                            <h4>딥러닝</h4>
+                            <p>신경망 모델의 학습 원리와 이미지 분류 모델 활용</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="data-analysis">
+                            <h4>데이터 분석하기</h4>
+                            <p>데이터 전처리, 탐색적 데이터 분석, 통계 분석 및 시각화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 연락처 -->
+        <div class="info2">
+            <p id="greeting">Contact me</p>
+
+            <p>
+                e-mail:
+                <input type="email" placeholder="example@email.com">
+            </p>
+
+            <p>
+                cooperation:
+                <input type="text" placeholder="OZ 코딩">
+            </p>
+
+            <p>
+                전송하기
+                <button type="button">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </p>
+        </div>
+
+
+
+
+</body>
+
+</html>
