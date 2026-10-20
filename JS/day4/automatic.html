@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>암호화폐 가격변동 추적기</title>
+    <link rel="stylesheet" href="automatic_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>암호화폐 가격변동 추적기</h1>
+
+        <div class="toolbar">
+            <div class="tabs">
+                <button class="tab active" data-tab="all">전체보기</button>
+                <button class="tab" data-tab="fav">관심항목 <span id="favCount">0</span></button>
+            </div>
+            <input id="search" type="text" placeholder="코인 검색 (예: BTC)" />
+        </div>
+
+        <div id="status" class="status">불러오는 중...</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>코인</th>
+                    <th class="num">현재가 (USDT)</th>
+                    <th class="num">24h 변동률</th>
+                    <th class="num">24h 고가</th>
+                    <th class="num">24h 저가</th>
+                    <th class="num">24h 거래대금</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+        <button id="moreBtn" class="more-btn" hidden>더보기</button>
+    </div>
+    <div class="scroll-btns">
+        <button id="scrollTopBtn" aria-label="맨 위로">▲</button>
+        <button id="scrollBottomBtn" aria-label="맨 아래로">▼</button>
+    </div>
+    <script src="auto.js"></script>
+</body>
+
+</html>

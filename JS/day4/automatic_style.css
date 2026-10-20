@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Noto Sans KR", sans-serif;
+    background: #0f1420;
+    color: #e6e8ee;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0 0 16px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab {
+    padding: 8px 16px;
+    border: 1px solid #2a3350;
+    border-radius: 8px;
+    background: transparent;
+    color: #aab;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #2a3350;
+    color: #fff;
+}
+
+#search {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #2a3350;
+    background: #171d2e;
+    color: #fff;
+    min-width: 220px;
+}
+
+.status {
+    font-size: 12px;
+    color: #8890a8;
+    margin: 8px 0;
+}
+
+.status.error {
+    color: #ff6b6b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.more-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    border: 1px solid #2a3350;
+    border-radius: 8px;
+    background: #171d2e;
+    color: #e6e8ee;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background: #2a3350;
+}
+
+th,
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #1f2740;
+    text-align: left;
+}
+
+th {
+    font-size: 12px;
+    color: #8890a8;
+    position: sticky;
+    top: 0;
+    background: #0f1420;
+}
+
+.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.star {
+    cursor: pointer;
+    color: #4a5372;
+    font-size: 18px;
+    user-select: none;
+}
+
+.star.on {
+    color: #f5c542;
+}
+
+.symbol {
+    font-weight: 600;
+}
+
+.symbol small {
+    color: #8890a8;
+    font-weight: 400;
+}
+
+.up {
+    color: #ff5b5b;
+}
+
+/* 상승: 빨강 (한국식) */
+.down {
+    color: #4c8dff;
+}
+
+/* 하락: 파랑 */
+
+.flash-up {
+    animation: flashUp 0.6s;
+}
+
+.flash-down {
+    animation: flashDown 0.6s;
+}
+
+@keyframes flashUp {
+    from {
+        background: rgba(255, 91, 91, 0.35);
+    }
+
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes flashDown {
+    from {
+        background: rgba(76, 141, 255, 0.35);
+    }
+
+    to {
+        background: transparent;
+    }
+}
+
+.empty {
+    text-align: center;
+    color: #8890a8;
+    padding: 40px 0;
+}
+
+.scroll-btns {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 100;
+}
+
+.scroll-btns button {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #2a3350;
+    border-radius: 50%;
+    background: #171d2e;
+    color: #e6e8ee;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.2;
+    /* 추가: 평소 20% */
+    transition: opacity 0.2s;
+    /* 추가: 부드럽게 변화 */
+}
+
+.scroll-btns button:hover {
+    background: #2a3350;
+    opacity: 1;
+    /* 추가: 호버 시 100% */
+}
